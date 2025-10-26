@@ -1,0 +1,9 @@
+This file contains an example of how to run the flexible train.py script to train the Shakespearean model with its specific hyperparameters.
+
+python train.py \
+    --style modern_to_shakespeare \
+    --dataset_path shakespeare.json \
+    --output_dir ./flan-t5-base-lora-shakespeare \
+    --learning_rate 3e-4 \
+    --num_epochs 15 \
+    --lora_target_modules q k v o
